@@ -1,101 +1,72 @@
-<!doctype html>
-<html lang="fr">
+<!DOCTYPE html><html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Ton Nom — Portfolio</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Kelim</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f6fa;
+        }
+        header {
+            background-color: #3f7fbf;
+            padding: 15px 0;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1e73be;
+        }
+        .description-box {
+            background-color: #d9e9f7;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #3f7fbf;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
 </head>
-<body>
-  <header class="site-header">
-    <div class="container">
-      <a class="logo" href="#">Ton Nom</a>
-      <nav class="nav" id="main-nav">
-        <a href="#about">À propos</a>
-        <a href="#projects">Projets</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu">☰</button>
-    </div>
-  </header>
+<body><header>
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="cv.pdf" target="_blank">Mon CV</a>
+    </nav>
+</header><div class="container">
+    <h1>Moi, c'est Kelim </h1>
+    <h3>Étudiant en BTS SIO première année</h3>
+    <p>Bienvenue sur mon portfolio ! Ici, tu pourras découvrir mes projets, mes compétences et mon parcours.</p><div class="description-box">
+    <h2>Description :</h2>
+    <p>Bonjour, je m'appelle <strong>Kelim LIM</strong>, j’ai 18 ans et j’habite à Bagnolet.</p>
+    <p>Après un bac général spé maths physique, je compte m'orienter en<strong>SLAM</strong> pour me spécialiser dans le développement, avec comme ambition de poursuivre en license puis en master.</p>
+</div>
 
-  <main>
-    <!-- Hero -->
-    <section id="hero" class="hero container">
-      <div class="hero-content">
-        <h1>Bonjour, mon nom est <span class="name">Boussaid--Morais Kelim</span></h1>
-        <p class="tagline">Etudiant en BTS SIO</p>
-        <p>
-          <a class="btn" href="#projects">Voir mes projets</a>
-          <a class="btn btn-alt" href="#contact">Me contacter</a>
-        </p>
-      </div>
-      <div class="hero-image">
-        <img src="images/avatar.jpg" alt="Photo de Ton Nom">
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="about container">
-      <h2>À propos</h2>
-      <p>Deux à trois phrases sur ton parcours, tes intérêts et ce que tu veux apprendre ou accomplir.</p>
-      <ul class="skills">
-        <li>HTML / CSS</li>
-        <li>JavaScript</li>
-        <li>Git & GitHub</li>
-      </ul>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="projects container">
-      <h2>Projets</h2>
-      <div class="project-list">
-        <!-- Projet template (duplique pour chaque projet) -->
-        <article class="project-card">
-          <h3>Nom du projet</h3>
-          <p class="project-desc">Courte description du projet, technologies utilisées et objectifs.</p>
-          <p>
-            <a href="#" class="link">Voir en ligne</a> ·
-            <a href="#" class="link">Code (GitHub)</a>
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="contact container">
-      <h2>Contact</h2>
-      <p>Tu peux m'écrire à : <a href="mailto:ton.email@example.com">ton.email@example.com</a></p>
-
-      <!-- petit formulaire non-produit (envoie par mailto ou backend) -->
-      <form id="contact-form" class="contact-form" action="#" novalidate>
-        <label>
-          <span>Nom</span>
-          <input type="text" name="name" required>
-        </label>
-        <label>
-          <span>Email</span>
-          <input type="email" name="email" required>
-        </label>
-        <label>
-          <span>Message</span>
-          <textarea name="message" rows="5" required></textarea>
-        </label>
-        <button type="submit" class="btn">Envoyer</button>
-        <p id="form-msg" aria-live="polite"></p>
-      </form>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <small>© <span id="year"></span> Ton Nom — Tous droits réservés</small>
-      <nav class="footer-nav">
-        <a href="#">LinkedIn</a> · <a href="#">GitHub</a>
-      </nav>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
-</body>
+</div><footer>
+    © 2025 Kelim - Portfolio<br>
+    Contact :<br>
+    Numéro de téléphone : 06 18 30 50 49<br>
+    Email : kelimboussaidmorais@gmail.com@gmail.com
+</footer></body>
 </html>
